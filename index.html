@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Big Table</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- https://stackoverflow.com/questions/1312236/how-do-i-create-an-html-table-with-a-fixed-frozen-left-column-and-a-scrollable-b -->
+</head>
+<body>
+	<div class="perguntas">
+	
+	<h2 id="perguntas">Perguntas</h2>
+	
+	<h3>1) Sobre você</h3>
+	<ul>
+		<li>Nome, idade, formação</li>
+		<li>Em que área já trabalhou e</li>
+		<li>Em que área está trabalhando agora</li>
+	</ul>
+
+	<h3>2) Sobre a profissão e o mercado de trabalho</h3>
+	<p><strong>Sobre a profissão e o mercado de trabalho de forma geral</strong></p>
+	<p>Se é satisfatório trabalhar com isso, se tem muita oportunidade, como acha que vai estar no futuro, essas coisas</p>
+
+	<h3>3) Aplicação do curso</h3>
+	<ul>
+		<li>Que portas se abrem pra elas tendo esse curso no currículo, já agora durante o EM ou ao fim dele?</li>
+		<li>Você acha que existem oportunidades de trabalho, estágio (ou qualquer que seja a aplicação profissional) para os conhecimentos deste curso?</li>
+		<li>Já para a vida, de forma geral, como os conhecimentos adquiridos podem ser proveitosos?</li>
+	</ul>
+
+	<h3>4) Que caminho seguir</h3>
+	<p><strong>Para quem quiser seguir estudando programação, que caminho você recomendaria?</strong></p>
+	<p>Pq tem possibilidades das mais variadas:</p>
+	<ul>
+		<li>Estudar por conta própria;</li>
+		<li>Cursos avulsos;</li>
+		<li>Curso de nível técnico;</li>
+		<li>Graduação.</li>
+	</ul>
+	<p>Quais as vantagens e desvantagens de cada uma? Que fatores favorecem a escolha de um ou de outro?</p>
+
+	</div>
+
+	<h2 id="respostas">Respostas</h2>
+
+	<div class="table-scroll"><table>
+		<colgroup>
+			<col span="2">
+			<col span="1" style="width: 400px">
+			<col span="4" style="width: 500px">	
+		</colgroup>
+		<thead>
+			<tr>
+				<th colspan="2"><h3>Entrevistados</h3></th>
+				<th><h3>1) Sobre você</h3></th>
+				<th><h3>2) Sobre a profissão e o mercado de trabalho</h3></th>
+				<th><h3>3) Aplicação do curso</h3></th>
+				<th><h3>4) Que caminho seguir</h3></th>
+				<th>Outros comentários</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th rowspan="2" class="destacados"><h3>Gabi</h3></td>
+				<th rowspan="2" class="destacados">29</td>
+				<td>Engenheira da Computação, backend, coordenadora de desenvolvimento</td>
+				<td>A área é privilegiada e deve continuar no futuro. Mas bastante estressante. Pode ser de difícil entrada.</td>
+				<td>Um primeiro emprego não deve ser fácil. Enriqueça seu GitHub com projetinhos, se engaje nas comunidades de programação, fique de olho nas vagas do Linkedin</td>
+				<td>Existem vários caminhos: superior, técnico, cursos online. Para incorporar mão na massa também, aproveite a comunidade tech que é movimentada.</td>
+				<td>
+					Fala pra elas que se alguma quiser uma mentoria tech, pode passar meu contato
+					<br><br>Emprego eu não consigo ainda, mas mentoria a gente faz
+				</td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Gabi</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td><ul class="ul-1">
+					<li>Gabriela Bonelli do Valle</li>
+					<li>29 anos</li>
+					<li>Técnica em informática e Engenheira da computação.</li>
+					<li>Comecei trabalhando como desenvolvedora backend PHP, já passei por node, e brinquei de java, hoje eu sou coordenador de um time de desenvolvimento.</li>
+				</ul></td>
+				<td>O emprego na área tech tem bastante privilégio, em comparação aos outros empregos, mas é uma área bastante estressante. Na pandemia, como tudo vivia pela internet, houve um boom no mercado, explodiu de vagas de emprego e exponenciou a valorização do profissional,, passado a pandemia o mercado de trabalho tem contraído, alguns privilégios estão sendo revogados, como trabalho full home office, as vagas estão um pouco menores, e os salário estão menos encantadores, mas ainda assim é uma área de bastante privilégio, que não vejo entrando em crise nos próximos anos. O mercado tech é divulgado pelos salários astronômicos, porém não é uma realidade para todos e nem de fácil acesso, as vagas de Junior/Sandy são bem escassas, a dica é entrar em um estágio e crescer/desenvolver-se bastante para depois tentar uma vaga dessas.</td>
+				<td colspan="2">
+					Um curso de programação é uma ótima porta de entrada, mas a área tech não para de se inovar, então os estudos e aprendizados não param. Agora que você tem uma ideia dos conceitos existem alguns caminhos que pode trilhar, dentro dos acadêmicos:
+					<ol>
+						<li>Fazer uma graduação na área (Sistema de informação, ciência da computação, engenharia de computação ..)</li>
+						<li>Fazer um curso técnico no área, só da uma pesquisada se a ênfase do curso é em programação mesmo, tem uns técnicos que a ênfase é mais redes, infra e afins.</li>
+						<li>Fazer cursos online (udemy, cousera ..)</li>
+					</ol>
+					Mas caso você não queira só seguir os passos acadêmicos, e queira incorporar mão na massa também, a comunidade tech é bem orgânica, existem milhares de grupos de mentoria/estudo, escolha uma stack que queira aprender (PHP/GO/JAVA, SWIFT, KOTLIN) e procura no google/twitter/instagram/facebook/reddit que ira encontrar. Um outro passo é enriquecer seu gitHub, pega projetinhos pequenos e vai desenvolvendo e colocando no git, e gradualmente vá aumentando o nível de dificuldade dos projetos. Se nesse processo sentir dificuldade com a linguagem, existem sites que vão dando problemas e aumentando gradualmente a dificuldade para que você possa aprender (<a href="https://www.hackerrank.com">HackerRank</a>, <a href="https://www.codewars.com/">Codewars</a>), e tem alguns mais ludicos tambem como o <a href="https://codecombat.com/play">CodeCombat</a>.
+					<br><br>Quanto ao primeiro emprego, talvez as coisas não estejam tão fáceis, mas sabe as comunidades que eu falei acima ? Então, entra nelas, aprende, engaja lá, conversa com as pessoas, assim como em todas as áreas, ser bem relacionado facilita bastante as coisas e nesse meio tempo, divulga curriculum, conversa com pessoas que já trabalham na área, fica de olho em vagas (Linkedin)
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2" class="destacados"><h3>Rafa</h3></td>
+				<th rowspan="2" class="destacados">20</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>Estou disponível se alguém quiser conversar comigo</td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Cláudia</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td><audio controls><source src="rafa1.ogg" type="audio/ogg"></audio></td>
+				<td><audio controls><source src="rafa2.ogg" type="audio/ogg"></audio></td>
+				<td>
+					<audio controls><source src="rafa3.ogg" type="audio/ogg"></audio>
+					<audio controls><source src="rafa3b.ogg" type="audio/ogg"></audio>
+				</td>
+				<td>
+					<audio controls><source src="rafa4.ogg" type="audio/ogg"></audio>
+					<audio controls><source src="rafa4b.ogg" type="audio/ogg"></audio>
+					<audio controls><source src="rafa4c.ogg" type="audio/ogg"></audio>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2" class="destacados"><h3>PH</h3></td>
+				<th rowspan="2" class="destacados">31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td>
+					<ul class="ul-1">
+						<li>Paulo Henrique Gomes</li>
+						<li>31</li>
+					</ul>
+					<strong>Foi estudante de escola pública? </strong>Sim
+					<br><br><strong>Formação:</strong>
+					<ul>
+						<li>Graduação interrompida: 7 semestres em Ciência da Computação pela UFES</li>
+						<li>Tecnólogo em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Salesiano</li>
+						<li>Pós-graduado em Arquitetura de Software pela PUC Minas (EAD)</li>
+					</ul>
+					<strong>Trabalha com o que atualmente?</strong>
+					<br>Atualmente trabalho como programador, mais especificamente especializado em tecnologias da Microsoft.
+					<br><br><strong>Já trabalhou com algo além de programação? </strong>
+					<br>Consegui a minha primeira oportunidade como estagiário de programação aos 21 anos, antes disso eu trabalhei como garçom a noite em uma lanchonete em Cariacica desde os 17 anos e também nesse meio tempo também fazia uns extras como garçom em alguns restaurantes, bares e eventos.
+				</td>
+				<td>
+					<strong>Você acha satisfatório trabalhar com programação? E o que mais gosta/desgosta na programação?</strong>
+					<br>Adoro trabalhar com programação. Das diversas coisas que gosto na programação, acredito que o que mais gosto na programação é a satisfação pessoal em criar soluções para os mais diversos desafios que tive ao longo do carreira e por saber que ainda haverão muitos outros.
+					<br><br><strong>Há muitas oportunidades com programação no Espírito Santo?</strong>
+					<br>Acredito que no Espírito Santo há sim um número considerável de oportunidades, porém tive bastante dificuldades em encontrar a minha primeira oportunidade de estágio. Inicialmente foi por conta da restrição de 5 períodos completos da UFES, mas na época também tive a sensação que muitas das vagas de estágio ofertadas pelas empresas tinham uma exigência de formação/qualificação/experiência completamente desproporcional para alguém que quer justamente adquirir experiência.
+					<br><br><strong>Há muitas oportunidades em programação de maneira geral (além do Espírito Santo)?</strong>
+					<br>Apesar de eu acreditar haver "oportunidades suficientes para todos" no Espírito Santo, aconselho as pessoas a não se limitarem somente ao estado. Pois existem muitas outras boas/excelentes oportunidades em outros lugares do país e ainda melhores fora do país.
+					<br><br><strong>Quais as suas perspectivas para o futuro em relação às oportunidades na programação?</strong>
+					<br>Atualmente a TI de maneira geral, não somente a programação, paga salários acima da média justamente pela necessidade de mais profissionais.
+					<br><br>E apesar de acreditar que em algum determinado momento essa demanda irá diminuir/estabilizar, tenho a impressão que a programação ainda vai continuar com essa alta demanda por pelo uns 5 anos, pelo menos é a impressão que tenho.
+					<br><br>E mesmo que a demanda se estabilize, por um bom tempo, ainda haverão várias oportunidades a serem preenchidas.
+				</td>
+				<td>
+					<strong>Você acha que existem oportunidades de trabalho, estágio (ou qualquer que seja a aplicação profissional) para os conhecimentos deste curso?</strong>
+					<br>Definitivamente. Acredito que das vagas existentes atualmente, o maior número delas são vagas para Full-Stack (que é exatamente o conteúdo desse curso).
+					<br><br>E quando falamos em programador(a) Full-Stack, esperamos que a pessoa tenha conhecimentos em front-end (HTML, CSS e Javascript), back-end (PHP) e banco de dados (SQL).
+					<br><br>E das várias tecnologias de back-end existentes, PHP é uma das que mais tem oportunidades.
+					<br><br><strong>Você acha que ao concluir este curso, mesmo durante o ensino médio ou ao fim dele, seria possível iniciar uma carreira como pessoa programadora?</strong>
+					<br>Não sei dizer com muita certeza, mas infelizmente diria que não, pelo menos não no Espírito Santo.
+					<br><br>Apesar de eu ser do tipo que não liga para uma formação em curso superior, muitas empresas no Espírito Santo têm como exigência uma formação superior completa em algum curso de TI, ou exigir candidatos a partir de um determinado período do curso.
+					<br><br><strong>Já para a vida, de forma geral, como os conhecimentos adquiridos podem ser proveitosos?</strong>
+					<br>Após estes meus 10 anos trabalhando na área, tenho a sensação que a programação me ajudou a ser mais metódico, detalhista e organizado.
+					<br><br>Apesar de para algumas pessoas essas serem características serem bem chatas, acredito que isso aliado a minha disciplina me auxiliaram a chegar longe na minha carreira e a fazer mais por mim, minha família e amigos. :)
+				</td>
+				<td>
+					<strong>Qual alternativa você considera ser a mais efetiva para se preparar para o mercado de trabalho?</strong>
+					<br>Eu particularmente adoro fazer cursos avulsos pela internet (youtube, udemy, etc), porém é preciso termos cuidado com o excesso de informação que a internet nos proporciona e não acabarmos nos perdendo dos nossos objetivos por conta de "distrações".
+					<br><br>Porém, para mim, o que se mostrou mais efetivo ao longo da minha carreira foram justamente cursos online focados a me preparar na obtenção de certificações.
+					<br><br><strong>Quais as vantagens e desvantagens de cada qualificação?</strong>
+					<br>Com relação aos cursos técnicos, na minha opinião essa é uma excelente forma de se apresentar a programação aos alunos com um foco mais direcionado ao mercado de trabalho, mas como mencionei anteriormente, apesar de não ligar para curso superior, o mercado de maneira geral liga. Então recomendo pelo menos um curso superior para satisfazer essa necessidade que muitas empresas tem.
+					<br><br>A graduação também é uma excelente opção quando queremos ter uma base sólida com relação à matemática, lógica de programação, estruturas de dados, etc. Também há outras opções para aprender/reforçar esses conhecimentos básicos, mas a graduação é a forma mais tradicional e normalmente solicitada pelas empresas.
+					<br><br><strong>Para quem quiser seguir estudando programação, que caminho você recomendaria?</strong>
+					<br>Mas para mim o caminho das certificações se mostrou a melhor opção esforço/aprendizado que encontrei para evoluir na minha carreira e é o mesmo que eu também recomendaria.
+					<br><br>Escolha uma linguagem/tecnologia para se especializar e foque especificamente nela e tire certificações dessa tecnologia através de empresas de renome mundial (Microsoft, AWS, Google, ect).
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2"><h3>Cinthia</h3></td>
+				<th rowspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td><audio controls><source src="cinthia1.ogg" type="audio/ogg"></audio></td>
+				<td><audio controls><source src="cinthia2.ogg" type="audio/ogg"></audio></td>
+				<td>
+					<audio controls><source src="cinthia3a.ogg" type="audio/ogg"></audio>
+					<audio controls><source src="cinthia3b.ogg" type="audio/ogg"></audio>
+				</td>
+				<td>
+					<audio controls><source src="cinthia4a.ogg" type="audio/ogg"></audio>
+					<audio controls><source src="cinthia4b.ogg" type="audio/ogg"></audio>
+				</td>
+				<td></td>
+			</tr>
+			<!-- <tr>
+				<th rowspan="2"><h3>Paulo Henrique</h3></td>
+				<th rowspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr> -->
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<!-- <td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr> -->
+			<tr>
+				<th rowspan="2"><h3>Jonas</h3></td>
+				<th rowspan="2">28</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td>
+					Me chamo Jonas, sou formado em Engenharia da Computação pela UFES e tenho 28 anos. 
+					<br><br>Atualmente trabalho como Analytics Engineer, fazendo a estruturação e modelagem dos dados da área de aluguel do QuintoAndar.
+					<br><br>Já fiz estágio em desenvolvimento Web e Mobile e também na área de Redes. Assim que me formei, atuei como analista de dados da EDP e PicPay.
+				</td>
+				<td>Eu gosto bastante de trabalhar como Analytics Engineer, porque somos desafiados todos os dias a deixar o pipeline de dados mais eficiente e amigável para que os analistas de dados possam utilizar. O momento atual dessa área é de franco crescimento, porque as empresas estão percebendo que analisando de forma rápida e completa os dados produzidos pelos clientes, podem direcionar melhor os serviços e deixar o negócio mais rentável. Isso tende a crescer cada vez mais, porque a cada dia nós produzimos ainda mais dados e, com isso, temos que pensar novas maneiras de consumí-los sem abusar dos recursos físicos ou de núvem (o custo dessas ferramentas é calculado baseado na quantidade de recursos necessários para executar aquele processamento).</td>
+				<td>
+					Na minha época de ensino médio tive a oportunidade de fazer o curso técnico do IFES e isso me permitiu que eu conseguisse uma bolsa em um projeto de extensão nos meus primeiros meses de UFES, permitindo que eu me mantesse em Vitória pra estudar (morava em Castelo-ES). 
+					<br><br>Além de te colocar na frente de muita gente na concorrência por esse tipo de estágio e trabalho para pessoas com pouca experiência, acredito que esse tipo de curso serve muito para descobrir uma área de interesse (foi durante meu curso técnico no ensino médio que decidi que gostaria de cursar Engenharia da Computação).
+					<br><br>Mesmo que não tenha interesse ou oportunidade de cursar uma graduação, a descoberta dessa área de interesse permite que você possa estudar por conta própria algum assunto ou linguagem de forma mais aprofundada, o que abre ainda mais portas no mercado de trabalho. Hoje em dia, na área de tecnologia, são utilizados testes técnicos nos processos seletivos, ou seja, saber fazer por vezes é mais importante que um diploma (apesar de o diploma permitir que algumas etapas sejam saltadas).
+				</td>
+				<td>
+					Acredito que essa decisão varia muito de acordo com a realidade de cada um. Se tiver a oportunidade e condição de se dedicar a um curso mais longo, recomendaria a graduação por ser um curso mais completo e que vai conceder um embasamento teórico mais robusto, facilitando o aprendizado de novas tecnologias. Caso exista a urgência de entrar no mercado de trabalho, um curso técnico em conjunto com cursos online avulsos é uma boa alternativa, porque você poderá se aprofundar no conteúdo de interesse (curso avulso) sem deixar de ter um diploma para queimar algumas etapas (curso técnico).
+					<br><br>O estudo por conta própria exige muita disciplina e dedicação e, de forma isolada, não acredito que seja uma boa alternativa para ingresso no mercado de trabalho, porque tendo pouca experiência e embasamento teórico, será necessária algum guia do que e como estudar. Além disso, a pessoa que opta por esse caminho terá um pouco mais de dificuldade de chegar na fase de teste técnico dos processos seletivos, por essa etapa ser precedida pela análise de currículo.
+				</td>
+				<td>
+					Cara... tem algumas empresas com vagas afirmativas pra mulheres que contrata na intenção de treinar tbm
+					<br><br>Acho que se for algo desse tipo, da pra encontrar
+					<br><br>Ela é menor de idade? Porque procurar de menor aprediz é uma boa tbm
+					<br><br>Acho que procurar por vaga de menor aprediz talvez seja a melhor alternativa
+					<br><br>Aí acho que teria que ser presencial (acho que tem alguma regra específica dessa pra menor)
+					<br><br>Pode ver na Picpay, Wine...
+					<br><br>E sendo mulher em tech, a empresa vai fazer de tudo pra manter depois
+				</td>
+			</tr>
+			<tr>
+				<th rowspan="2"><h3>Renan</h3></td>
+				<th rowspan="2">33</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td>
+					Renan, 33 anos, Mestrado em Computação
+					<br><br>Programador PHP, Python, NodeJs e Android Nativo(Java)
+					<br><br>Atualmente Analista de Infraestrutura no Banestes, atuando na área de Devops
+				</td>
+				<td>
+					Como toda profissão tem seus prós e contras. O ambiente é em maioria estressante, com prazos apertados, muito por conta da falta de planejamento e da troca entre o negócio e TI. Com planejamento adequado, o trabalho flui bem mais e se torna satisfatório.
+					<br><br>O mercado atualmente está aquecido e deve permanecer. Programação tende a ser exigido em qualquer profissão. Mesmo que não se siga a profissão é extremamente importante aprender a programar
+				</td>
+				<td>
+					Pra entrar na área não é necessário ter diploma. Logo, ter noção em programação já abre portas, e saber programar em determinadas tecnologias com certeza já te dão a oportunidade de conseguir algum trabalho na área. Com certeza a área mais demandada é a área de desenvolvimento web. Saber javascript te abre um leque de oportunidades muito grande. O próximo passo seria aprender frameworks baseados em javascripts que estão em alta, como react, angular, node, etc
+					<br><br>Caso não queiram seguir a área, sugiro que sempre tenham contato com a programação. A médio ou a longo prazo com certeza serão recompensadas
+				</td>
+				<td>
+					A faculdade tende a te dar a base e te ensinar a se virar. Apesar de não ser exigido na área, ter um curso superior te faz evoluir como pessoa e te dá bagagem para superar os desafios que surgem na carreira. 
+					<br><br>Cursos de nível técnico são importantes porque tendem a te preparar para o mercado de trabalho de uma forma mais direta e prática. 
+					<br><br>Por fim, estudar por conta própria exige um grau de maturidade e disciplina maior. É um caminho a seguir mas o esforço será maior. Há muito material na internet para estudo, e com disciplina é possível se desenvolver sozinho na área. 
+					<br><br>Na minha opinião, acredito que para a maioria das pessoas o que mais funciona é realizar um curso superior ou técnico para te dar uma base. E ,após isso, você consegue seguir se atualizando com cursos e materiais online por conta própria
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2"><h3>Pina</h3></td>
+				<th rowspan="2">32</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td><ul class="ul-1">
+					<li>Felipe Belsholff Pina, 32</li>
+					<li>Formado em ciência da computação pela UFES</li>
+					<li>Trabalhei com administração de sistemas, com desenvolvimento de sites (frontend e backend).</li>
+					<li>Trabalho atualmente com projetos de infraestrutura de TI para desenvolvedores no Banestes.</li>
+				</ul></td>
+				<td>
+					Trabalhar com TI, mesmo nos cargos mais comuns e repetitivos, possui uma pitada de novidade toda vez que se vai fazer algo. A TI, diferente de outras áreas, permite perceber o feedback do usuário e agregar valor para ele com investimento reduzido, em velocidade rápida. Você pode se especializar para um negócio (TI médica, por exemplo) e de repente se ver trabalhando com outro (TI para ferrovias). Outras áreas não te permitem iniciar em outra área de negócio tão rápido assim, embora o entendimento total da área leve tempo. Isso é estimulante!
+					<br><br>O mercado de TI hoje ainda é um dos mais aquecidos, com mais oportunidades e estágios fazem toda diferença para entrar no mercado de trabalho. De preferência aqueles que te permitem colocar a mão na massa.
+					<br><br>No futuro, vejo que o mercado de TI não vai perder tanta demanda quanto outros mercados por causa da IA. Mas o tipo de profissional vai mudar: o profissional de conhecimento amplo em TI, com boa capacidade de se expressar e traduzir uma funcionalidade de um sistema para codigo vai se destacar frente aos demais.
+				</td>
+				<td>
+					Um curso de desenvolvimento para jovens mulheres, além de uma tentativa de corrigir uma distorção da realidade do país e abrir um leque novo de oportunidades para mulheres, permite que em alguns meses seja possível testar se a parte mais básica da TI é algo que a jovem acha aceitável fazer como faculdade e depois profissão, mesmo que seja um curso. São poucas as áreas que permitem se especializar e se aproximar do que é feito no ensino superior e mercado já no ensino médio. 
+					<br><br>Sim, boa parte do mercado inicia-se em desenvolvimento nas linguagens e ferramentas do curso. Boa parte do desenvolvimento de aplicações e websites passam pelos conceitos deste curso.
+					<br><br>Dar a jovem a capacidade de tomar decisões em algum aspecto ajuda a tomar melhores decisões.  Permitir que as jovens treinem logica e estruturem seus pensamentos facilitam nas atividades do dia a dia ainda que programação nao seja a sua praia. Só é preciso ter cuidado com o sobrepensar, já que TI pode nos levar a cair neste lugar comum e ativar gatilhos ansiosos.
+				</td>
+				<td>
+					Fazer cursos gratuitos na Internet aprofundando os conhecimentos em programação, em projetos de sistemas, em redes e sistemas operacionais. Ao fim do EM, uma faculdade ou tecnologo em tecnologia (análise e desenvolvimento de sistemas, sistemas de informação ou ciência da computacao) para ampliar o leque de conhecimentos e atualizar com o que há de mais novo.
+					<br><br>Quanto mais tecnólogo mais o curso te prepara para ser um trabalhador da área tecnica que bota a mao na massa. Quanto mais faculdade, mais ela te prepara para projetar, analisar e especificar sistemas que alguém vai construir. Por vezes você bota a mão na massa, mas na maior parte das vezes você trabalha para que outras pessoas façam isso enquanto seu foco é apoiar essas pessoas e garantir especificidades do sistema no mais alto nível.
+					<br><br>O perfil da pessoa é que determina qual deve ser seu percurso. Na minha opinião, pensar em uma faculdade te permite trabalhar com salários ligeiramente maiores desde o início e posteriormente, se achar que a parte operacional tem mais a ver consigo, fazer a migração enquanto tenta se manter com bons salários. O contrario já é mais complicado, porque é necessário correr atrás de mais conhecimento para sair do operativo e trabalhar com análise da forma apropriada. Ou então ter muita experiência.
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2"><h3>Eduardo</h3></td>
+				<th rowspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td>
+					<ul class="ul-1">
+						<li>Eduardo Favarato</li>
+						<li>31</li>
+					</ul>
+					<strong>Foi estudante de escola pública?</strong> Não
+					<br><br><strong>Formação:</strong> Superior em Ciência da Computação
+					<br><br><strong>Trabalha com o que atualmente?</strong>
+					<br>Não entendi a pergunta.
+					<br><br><strong>Já trabalhou com algo além de programação? </strong>
+					<br>Não entendi a pergunta.
+				</td>
+				<td>
+					<strong>Você acha satisfatório trabalhar com programação? E o que mais gosta/desgosta na programação?</strong>
+					<br>Sim. A possibilidade de construir coisas relevantes.
+					<br><br><strong>Há muitas oportunidades com programação no Espírito Santo?</strong>
+					<br>Não sei informar.
+					<br><br><strong>Há muitas oportunidades em programação de maneira geral (além do Espírito Santo)?</strong>
+					<br>Sim!
+					<br><br><strong>Quais as suas perspectivas para o futuro em relação às oportunidades na programação?</strong>
+					<br>Ótimas, de muitas oportunidades.
+				</td>
+				<td>
+					<strong>Você acha que existem oportunidades de trabalho, estágio (ou qualquer que seja a aplicação profissional) para os conhecimentos deste curso?</strong>
+					<br>Sim
+					<br><br><strong>Você acha que ao concluir este curso, mesmo durante o ensino médio ou ao fim dele, seria possível iniciar uma carreira como pessoa programadora?</strong>
+					<br>Sim
+					<br><br><strong>Já para a vida, de forma geral, como os conhecimentos adquiridos podem ser proveitosos?</strong>
+					<br>Com o mundo cada vez mais digital, o conhecimento do curso é cada vez mais útil em diversas áreas.
+				</td>
+				<td>
+					<strong>Qual alternativa você considera ser a mais efetiva para se preparar para o mercado de trabalho?</strong>
+					<br>Cursos de nível técnico.
+					<br><br><strong>Quais as vantagens e desvantagens de cada qualificação?</strong>
+					<br>Alguns pontos importantes para considerar são: tempo investido, estilo de aprendizagem do aluno, disponibilidade, e acesso.
+					<br><br>Cada pessoa, a depender desses fatores, poderá fazer sua escolha.
+					<br><br>Todas são caminhos possíveis para ingressar na área, porém cada uma pode se adaptar melhor a realidade de cada pessoa.
+					<br><br>Eu considero cursos de nível técnico como mais efetiva pela curta duração, se comparado com uma graduação, pelo suporte de um professor ou alguém da área, e pela regularidade/disciplina de tempo investido.
+					<br><br><strong>Para quem quiser seguir estudando programação, que caminho você recomendaria?</strong>
+					<br>Como disse, acredito que não há uma resposta padrão para essa pergunta. Depende da realidade de cada pessoa, todas são viáveis.
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2"><h3>Erika</h3></td>
+				<th rowspan="2">31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <th rowspan="2">Daniela</td> -->
+				<!-- <th rowspan="2">32</td> -->
+				<td>
+					<ul class="ul-1">
+						<li>Erika de Almeida Segatto </li>
+						<li>31</li>
+					</ul>
+					<strong>Foi estudante de escola pública? </strong> Não
+					<br><br><strong>Formação:</strong> Erika de Almeida Segatto
+					<br><br><strong>Trabalha com o que atualmente?</strong>
+					<br>Analista de TI. Arquitetura e desenvolvimento de sistemas.
+					<br><br><strong>Já trabalhou com algo além de programação? </strong>
+					<br>Não
+				</td>
+				<td>
+					<strong>Você acha satisfatório trabalhar com programação? E o que mais gosta/desgosta na programação?</strong>
+					<br>Sim. Gosto dos desafios da lógica de programação. 
+					<br><br><strong>Há muitas oportunidades com programação no Espírito Santo?</strong>
+					<br>Há bastantes.. mas podem não ser as melhores
+					<br><br><strong>Há muitas oportunidades em programação de maneira geral (além do Espírito Santo)?</strong>
+					<br>Sim. O mercado está ótimo para profissional de TI em geral.
+					<br><br><strong>Quais as suas perspectivas para o futuro em relação às oportunidades na programação?</strong>
+					<br>Se o mundo continuar crescendo em tecnologia, imagino que as oportunidades tendem a crescer para aqueles que se especializarem. 
+				</td>
+				<td>
+					<strong>Você acha que existem oportunidades de trabalho, estágio (ou qualquer que seja a aplicação profissional) para os conhecimentos deste curso?</strong>
+					<br>Não conheço ninguém que trabalhe com PHP. Sobre os demais, acredito que existem muitas oportunidades.
+					<br><br><strong>Você acha que ao concluir este curso, mesmo durante o ensino médio ou ao fim dele, seria possível iniciar uma carreira como pessoa programadora?</strong>
+					<br>Sim. Não é necessário diploma de graduação para atuação no mercado, é necessário conhecimentos básicos e saber se vender rs.
+					<br><br><strong>Já para a vida, de forma geral, como os conhecimentos adquiridos podem ser proveitosos?</strong>
+					<br>Pode ser o início de uma carreira promissora.
+				</td>
+				<td>
+					<strong>Qual alternativa você considera ser a mais efetiva para se preparar para o mercado de trabalho?</strong>
+					<br>Como uma pessoa graduada, eu percebo que a graduação oferece uma base sólida para que mais conhecimentos sejam adquiridos.  As vezes uma pessoa que não tem uma graduação, ou que vem de outras áreas, faltam um pouco de entender mais profundamente como as coisas funcionam. Mas isso não as impede de ter sucesso na profissão, elas vão aprendendo com a experiência.
+					<br><br><strong>Quais as vantagens e desvantagens de cada qualificação?</strong>
+					<br>Ao meu ver, quanto mais longo o curso, mais preparada fica a pessoa. Mas leva mais tempo estudando. 
+					<br><br><strong>Para quem quiser seguir estudando programação, que caminho você recomendaria?</strong>
+					<br>Eu recomendaria graduação se possível. Se não, um curso técnico pode ser suficiente para um início.
+				</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table></div>
+
+
+
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+</body>
+</html>

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 1em;
+	background-color: ivory;
+	font-family: "Helvetica", sans-serif;
+}
+
+.perguntas {
+	max-width: 600px;
+}
+
+/*.table-scroll {
+	overflow-x: scroll;
+	width: 100%;
+} */
+
+table {
+	border-collapse: collapse;
+	min-width: 1300px;
+}
+
+/*Table header row*/
+thead {
+	position: sticky;
+	top: 0;
+/*	border-bottom: 3px solid black;*/
+	z-index: 3;
+}
+
+tbody tr:nth-child(odd) td {
+	background-color: lightyellow;
+}
+
+th {
+	background-color: lemonchiffon;
+}
+
+.destacados	{
+	background-color: lightgreen;
+}
+
+tbody tr th:first-child {
+	position: sticky;
+	left: 0;
+	z-index: 2;
+}
+
+td, th, tr, thead, tbody {
+	border: 1px solid grey;
+	padding: 1em;
+}
+
+td {
+	text-align: justify;
+	vertical-align: top;
+}
+
+.ul-1 {
+	margin-top: 0;
+	padding-left: 1em;
+	text-align: left;
+}
+
+td audio {
+	width: 100%;
+}
